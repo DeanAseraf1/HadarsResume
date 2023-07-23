@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        :root{
+            --download-button-width: 50px;
+            --download-button-height: 50px;
+        }
+
+        *{
+            
+            margin: 0px;
+            padding: 0px;
+            
+        }
+
+        .pdf{
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .pdf:focus{
+            outline: none;
+        }
+
+        .container{
+            display: flex;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .controls{
+            position: absolute;
+            right: calc(52px + 5px);
+            top: 12px;
+        }
+
+        .controls > div{
+            background-color: rgba(35, 35, 35, 0.875);
+            width: 40px;
+            height: 40px;
+        }
+        .controls > div > a{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+
+        .controls > div > a:hover{
+            background-color: rgba(255, 255, 255, 0.075);
+        }
+        
+        .controls > div > a > svg{
+            color: white;
+            width: 18px;
+            height: 18px;
+        }
+    </style>
+    <script defer>
+
+    </script>
+</head>
+<body>
+    <div class="container">
+        
+        <!--<embed src="./קוח + תיק עבודות - הדר שגיא.pdf" type="application/pdf" class="pdf"/>-->
+        <div class="controls">
+            <div class="background">
+                <a href="/Graphic Designer Hadar Sagi Protfolio.pdf" download>
+                    <svg 
+                    xmlns="http://www.w3.org/2000/svg"
+                    id="Isolation_Mode"
+                    data-name="Isolation Mode"
+                    viewBox="0 0 24 24"
+                    width="512"
+                    height="512">
+                    <path
+                    fill="#ffffff"
+                    d="M12.033,19.011a3.489,3.489,0,0,0,2.475-1.024l3.919-3.919-2.121-2.121-2.782,2.782L13.5,0l-3,0,.024,14.709L7.76,11.947,5.639,14.068l3.919,3.919A3.487,3.487,0,0,0,12.033,19.011Z"/>
+                    <path 
+                    fill="#ffffff"
+                    d="M21,16v5H3V16H0v5a3,3,0,0,0,3,3H21a3,3,0,0,0,3-3V16Z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <iframe src="https://drive.google.com/file/d/1EbLK4Hd0ST94YuM5rNe2kjkxHvxoDBBH/preview" class="pdf" allow="autoplay"></iframe>
+    </div>
+</body>
+</html>
